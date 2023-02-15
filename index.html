@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- || LINKING EXTERNAL CSS FILE -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Mobile clock App</title>
+  </head>
+  <body>
+    <main>
+      <!-- || MENU ELEMENT -->
+      <section class="menu-bar">
+        <span>&uparrow;</span>
+        <span>&downarrow;</span>
+      </section>
+
+      <!-- Clock section-->
+      <section class="main">
+        <div class="clock-container">
+          <div id="clock"></div>
+          <!-- <div id="date"></div> -->
+        </div>
+
+        <div class="period"></div>
+
+        <div class="day-date">
+          <div class="day"></div>
+          <div class="date"></div>
+        </div>
+      </section>
+
+      <!-- || TOGGLE ELEMENT -->
+      <div class="toggle-wrapper">
+        <div class="toggle">
+          <input class="toggle-input" type="checkbox" />
+          <div class="toggle-bg"></div>
+          <div class="toggle-switch">
+            <div class="toggle-switch-figure"></div>
+            <div class="toggle-switch-figureAlt"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- || LINKING EXTERNAL JS FILE -->
+    <script src="main.js"></script>
+  </body>
+</html>
