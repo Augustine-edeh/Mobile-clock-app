@@ -1,30 +1,30 @@
 const showTime = () => {
-  // DEFAULT DATE PARAMETERS:
-  // DATE OBJECT
+  // || DEFAULT DATE PARAMETERS:
+  // || DATE OBJECT
   const dateObj = new Date();
 
-  // GETTING SECONDS
+  // || GETTING SECONDS
   let defaultSeconds = dateObj.getSeconds();
 
-  // GETTING MINUTES
+  // || GETTING MINUTES
   let defaultMinute = dateObj.getMinutes();
 
-  // getting hour
+  // g||  etting hour
   let hour = dateObj.getHours();
 
-  // GETTING DAY
+  // || GETTING DAY
   const defaultday = dateObj.getDay();
 
-  // GETTING DATE
+  // || GETTING DATE
   const defaultDate = dateObj.getDate();
 
-  // getting month
+  // || GETTING MONTH
   const defaultMonth = dateObj.getMonth();
 
-  // GETTING YEAR
+  // || GETTING YEAR
   const defaultYear = dateObj.getFullYear();
 
-  // WEEKS ARRAY
+  // || WEEKS ARRAY
   const daysOfTheweek = [
     "Sunday",
     "Monday",
@@ -35,7 +35,7 @@ const showTime = () => {
     "Saturday",
   ];
 
-  // MONTHS ARRAY
+  // || MONTHS ARRAY
   let monthArray = [
     "January",
     "February",
@@ -51,14 +51,14 @@ const showTime = () => {
     "December",
   ];
 
-  // PROCESSED DATE PARAMETERS:
-  // MONTH
+  // || PROCESSED DATE PARAMETERS:
+  // || MONTH
   const month = monthArray[defaultMonth];
 
-  // DAY
+  // || DAY
   const day = daysOfTheweek[defaultday];
 
-  // AM/PM
+  // || AM/PM
   let period = hour < 12 ? "Am" : "Pm";
 
   const clockDiv = document.getElementById("clock");
@@ -67,14 +67,14 @@ const showTime = () => {
   const dayContainer = document.querySelector(".day");
   const dateElement = document.querySelector(".date");
 
-  // ADDING A PREFIXED ZERO TO THE TIME PARAMETER FOR UNIFORM DISPLAY OF DIGITS AT ALL TIMES
+  // || ADDING A PREFIXED ZERO TO THE TIME PARAMETER FOR UNIFORM DISPLAY OF DIGITS AT ALL TIMES
   hour < 10 ? (hour = "0" + hour) : "";
   defaultMinute < 10 ? (defaultMinute = "0" + defaultMinute) : "";
   defaultSeconds < 10 ? (defaultSeconds = "0" + defaultSeconds) : "";
   hour > 12 ? (hour = hour - 12) : "";
   hour == 00 ? (hour = 12) : "";
 
-  // PROCESSED TIME_STRING
+  // || PROCESSED TIME_STRING
   let timeString = `${hour}:${defaultMinute}:${defaultSeconds}`;
 
   // || PROCESSED DATE_STRING
