@@ -45,8 +45,8 @@ main {
   display: grid;
   place-content: center;
   background-color: var(--ghost-white);
-  height: 37.5rem;
-  width: 18rem;
+  height: 45rem;
+  width: 21rem;
   border-radius: 1rem;
   border: 0.3rem solid var(--border);
 }
@@ -73,10 +73,10 @@ main {
   background: var(--div-bg);
   border-radius: 50%;
   border: 0.2rem dashed var(--timberwolf);
-  height: 15rem;
-  width: 15rem;
+  height: 18rem;
+  width: 18rem;
   margin: auto;
-  font-size: 3rem;
+  font-size: 4.5rem;
   -webkit-box-shadow: 5px 5px 5px 0px var(--shadow);
   -moz-box-shadow: 5px 5px 5px 0px var(--shadow);
   box-shadow: 5px 5px 5px 0px var(--shadow);
@@ -102,8 +102,8 @@ main {
   place-content: center;
   color: var(--color);
   background-color: var(--div-bg);
-  height: 6rem;
-  width: 8rem;
+  height: 8rem;
+  width: 9.5rem;
   font-size: 1.4rem;
   padding: 0.4rem;
   border-radius: 0.5rem;
